@@ -1,0 +1,30 @@
+<div class="position fixed-action-btn horizontal click-to-toggle">
+  <a class="hamburger hamburger--squeeze btn-floating btn-large black z-depth-2">
+      <span class="hamburger-box">
+        <span class="hamburger-inner white"></span>
+      </span>
+  </a>
+  <ul>
+
+    <li (click)="setComponent(0)">
+      <span class="btn-floating z-depth-2" [ngClass]="{ 'red darken-4' : activeBtn[0], 'grey darken-1' : !activeBtn[0] }">
+        <i class="material-icons">home</i>
+      </span>
+    </li>
+    <li (click)="setComponent(1)">
+      <span class="btn-floating z-depth-2" [ngClass]="{ 'red darken-4' : activeBtn[1], 'grey darken-1' : !activeBtn[1] }">
+        <i class="material-icons">insert_drive_file</i>
+      </span>
+    </li>
+    <li (click)="setComponent(2)">
+      <span class="btn-floating z-depth-2" [ngClass]="{ 'red darken-4' : activeBtn[2], 'grey darken-1' : !activeBtn[2] }">
+        <i class="material-icons">work</i>
+      </span>
+    </li>
+    <li (click)="setComponent(3)">
+      <span class="btn-floating z-depth-2" [ngClass]="{ 'red darken-4' : activeBtn[3], 'grey darken-1' : !activeBtn[3] }">
+        <i class="material-icons">more_vert</i>
+      </span>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,39 @@
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img.envelope {
+    display: none;
+    width: 40px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.card-panel {
+    padding: 0;
+}
+
+.cloud {
+    border: none;
+    border-radius: 50%;
+    background-color: #B71C1C;
+    width: 40px;
+    height: 40px;
+    line-height: 1.5;
+}
+
+@media(min-width: 768px) {
+    .title {
+        font-size: 40px;
+        font-weight: normal;
+    }
+
+    img.envelope {
+        display: inline-block;
+    }
+
+    .card-panel {
+        padding: 10px 20px;
+    }
+}
